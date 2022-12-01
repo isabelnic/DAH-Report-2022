@@ -1,4 +1,4 @@
-# DAH-Report-2022
+# DAH-Report-Remote-Sensing-System-2022
 The suplimentry material for the remote sensing system. 
 
 A University of Edinburgh 4th year course in finished Dec 2022
@@ -16,5 +16,8 @@ Last updated 1st Dec 2022
 
 #### File: weatherstation arduino.txt
   The C++ code must be uploaded to the Adafruit HUZZAH ESP8266 WiFi micro-controller breakout using the CP2102 USB-TTL UART Module. It contains the code to read the sensors' data and upload it to the local server. The code can be uploaded using the Arduino app on a windows PC.
+  
+#### Files with .png
+  These are just for example purposes, to show what was done in the project. Not necessary to be able to repicate the project but aids it.
 
 

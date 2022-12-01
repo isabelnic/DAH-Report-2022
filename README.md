@@ -14,7 +14,7 @@ Last updated 1st Dec 2022
 #### File: our_sensor_data.py
   The file used to retrieve the data from the local server contains the principle function for this project, get_tempNhum, with only the input of an IP address. When experimenting with the readings, we found that the measurements would jump around, especially for the water level sensor. The code collects ten measurements with gaps of 0.25s and returns each sensor's average values. This function is called in project.py.
 
-#### File: weatherstation arduino.txt
+#### File: weatherstation arduino.cpp
   The C++ code must be uploaded to the Adafruit HUZZAH ESP8266 WiFi micro-controller breakout using the CP2102 USB-TTL UART Module. It contains the code to read the sensors' data and upload it to the local server. The code can be uploaded using the Arduino app on a windows PC.
   
 #### Files with .png or .jpg

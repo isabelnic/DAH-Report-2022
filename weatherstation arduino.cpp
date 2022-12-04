@@ -22,7 +22,7 @@
 #define POWER_PIN  12
 #define SIGNAL_PIN A0
 #define SENSOR_MIN 0
-#define SENSOR_MAX 470
+#define SENSOR_MAX 550
 
 int water_value = 0; // variable to store the sensor value
 int water_level = 0; // variable to store the water level
@@ -118,12 +118,12 @@ int readwater_level() {
   digitalWrite(POWER_PIN, LOW);   // turn the sensor OFF
   
   // Convert the analog value to millimeter, the sensor is 4 cm long
-  water_level = map(water_value, SENSOR_MIN, SENSOR_MAX, 0, 40); // 40 levels
+  water_level = map(water_value, SENSOR_MIN, SENSOR_MAX, 0, 4); // 4 levels
   Serial.print("Water level: ");
   Serial.println(water_level);
 
   delay(1000);
-  return water_level;
+  return water_level * 10;
 }
 
 void gettemperature() {
